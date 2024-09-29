@@ -2,8 +2,7 @@ program vendingMachine;
 uses crt;
 
 var
-    NP : integer;
-    PN : string;
+    PN, NP: string;
 
     begin
         clrscr;
