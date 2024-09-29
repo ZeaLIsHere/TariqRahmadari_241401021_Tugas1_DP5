@@ -27,6 +27,6 @@ var
         end;
     writeln;
     writeln('Produk yang anda beli adalah: ',PN);
-    writeln('Terimakasih Sudah Membeli:)');
+    writeln('Terimakasih Sudah Datang:)');
     readln;
 end.
