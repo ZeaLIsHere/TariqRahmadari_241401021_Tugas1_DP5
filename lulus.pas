@@ -1,4 +1,4 @@
-program cekNilai;
+program lulusTaklulus;
 
 uses crt;
 
