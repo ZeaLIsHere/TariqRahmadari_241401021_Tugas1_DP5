@@ -1,4 +1,4 @@
-program cek_nilai_huruf;
+program vendingMachine;
 uses crt;
 
 var
