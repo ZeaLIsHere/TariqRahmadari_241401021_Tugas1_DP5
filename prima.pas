@@ -1,4 +1,4 @@
-program ganjilGenap;
+program rima;
 
 uses crt;
 
