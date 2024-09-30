@@ -1,35 +1,36 @@
-program prima;
-
+program bilangan_prima;
 uses crt;
 
-var  
-  angka, i, count: integer;
+var
+n, i : integer;
+angka : boolean;
 
 begin
-    clrscr;
-    write('Masukkan sebuah bilangan bulat:');  
-    readln(angka);  
+clrscr;
+write ('Masukkan bilangan bulat: '); readln (n);
 
-    if angka < 2 then  
-    begin  
-    writeln(angka, ' bukan bilangan prima.');  
-    exit;  
-  end;  
+angka:= true;
 
-    count := 0;  
-
-    for i := 1 to angka do  
-    begin  
-    if (angka mod i = 0) then  
-      count := count + 1;  
-    end;  
-
-    if count = 2 then
+if ((n=0) or (n=1)) then
+  angka:= false
+else 
+  begin 
+  for i:= 2 to (n div 2) do
     begin
-    writeln(angka, ' Adalah bilangan prima.');
-    end
-    else
-    begin
-    writeln(angka, ' Bukan bilangan prima.');
-    end
+      if ((n mod i)= 0) then
+        begin
+          angka:= false;
+          break;
+        end;
+      end;
+    end;
+
+if (angka) then
+  begin
+    writeln(n, ' adalah angka prima');
+  end
+else
+  begin
+    writeln (n, ' bukanlah angka prima');
+  end;
 end.
